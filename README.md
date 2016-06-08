@@ -18,9 +18,11 @@ Challenge 1:
 ------------
 
 1. Remove all spaces, newlines and the baby emote from the given text and you get
+
 	`xthexyhiddenyystringyyisyymollycoddlexysoxxsimpley`
 	
 2. Remove all unnecessary x's and y's and replace with space where appropriate
+
 	`the hidden string is mollycoddle so simple`
 
 => `mollycoddle`
@@ -67,8 +69,9 @@ Challenge 6:
 ------------
 
 Klick on each elevator button and it will redirect you to `challenge06.html?floor={floornumber}` except button 13 wich will bring you to `challenge06.html?sybbe=punatrzr`.
-`sybbe` is rot13 of `floor` and `punatrzr` is rot13 of `changeme`. We expect floor thirteen so rot13 of `thirteen` is `guvegrra`.
+`sybbe` is rot13 of `floor` and `punatrzr` is rot13 of `changeme`.
 
+We expect floor thirteen so rot13 of `thirteen` is `guvegrra`.
 Thus, we need to visit `challenge06.html?sybbe=guvegrra` and voila there is the egg.
 
 Challenge 7:
