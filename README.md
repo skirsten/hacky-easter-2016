@@ -46,11 +46,11 @@ I installed the Hacky Easter app on the Android emulator BlueStacks and set Auda
 
 The recording looks like this:
 
-![audacity_wave](http://lvack.com/easter2016/4_audacity_wave.png)
+![audacity_wave](https://raw.githubusercontent.com/skirsten/hacky-easter-2016/master/res/04_audacity_wave.png)
 
 Marking the region with the “beep” and selecting Analyse => Plot Spectrum:
 
-![audacity spectrum](http://lvack.com/easter2016/4_audacity_spectrum.png)
+![audacity spectrum](https://raw.githubusercontent.com/skirsten/hacky-easter-2016/master/res/04_audacity_spectrum.png)
 
 With the wanted frequency in the middle at 6200Hz. Do this 5 times and you got your egg!
 
@@ -144,7 +144,7 @@ Challenge 10:
 
 After analyzing the javascript code this formula was extracted and can be used to draw a pixel at (x, y) with the value v.
 
-![Created with LaTeX](http://lvack.com/easter2016/10_formula.svg)
+![Created with LaTeX](https://raw.githubusercontent.com/skirsten/hacky-easter-2016/master/res/10_formula.svg)
 
 If the result is 1 the pixel is white if 0 blue.
 This is nothing other than a mathematical way of getting the bit at a specific position.
@@ -324,15 +324,15 @@ Challenge 14:
 To not trip into traps or having to deobfuscate code just ask your browser what he executes:
 Inspect the form
 
-![form](http://lvack.com/easter2016/14_form.png)
+![form](https://raw.githubusercontent.com/skirsten/hacky-easter-2016/master/res/14_form.png)
 
 Ask console what the function is and click on it.
 
-![console](http://lvack.com/easter2016/14_console.png)
+![console](https://raw.githubusercontent.com/skirsten/hacky-easter-2016/master/res/14_console.png)
 
 Perfect source code:
 
-![javascript source](http://lvack.com/easter2016/14_jssrc.png)
+![javascript source](https://raw.githubusercontent.com/skirsten/hacky-easter-2016/master/res/14_jssrc.png)
 
 => user: `elsa`
 
@@ -438,12 +438,12 @@ must be called before the supplied commands.
 
 Using this online [Logo Interpreter](http://www.calormen.com/jslogo/) the turtle drew this:
 
-![turtle with qr code](http://lvack.com/easter2016/17_turtle.png)
+![turtle with qr code](https://raw.githubusercontent.com/skirsten/hacky-easter-2016/master/res/17_turtle.png)
 
 Challenge 18:
 -------------
 
-![what a noob](http://lvack.com/easter2016/18_noobcode.png)
+![what a noob](https://raw.githubusercontent.com/skirsten/hacky-easter-2016/master/res/18_noobcode.png)
 
 fixed:
 ```csharp
@@ -655,7 +655,7 @@ SELECT AES_DECRYPT(blahb, 'jpP8HeoEC5OCCBqdf9N3') from fyle;
 ```
 And surprise, one turned out to be a png file :)
 
-![wow a png](http://lvack.com/easter2016/20_wowapng.png)
+![wow a png](https://raw.githubusercontent.com/skirsten/hacky-easter-2016/master/res/20_wowapng.png)
 
 Just export and there is the egg.
 
@@ -664,7 +664,7 @@ Challenge 21:
 
 Just do this 4 times and search for online decipher:
 
-![enter image description here](http://lvack.com/easter2016/21_googleisop.png)
+![enter image description here](https://raw.githubusercontent.com/skirsten/hacky-easter-2016/master/res/21_googleisop.png)
 
 Caesar cipher: [Use this website](http://www.xarg.org/tools/caesar-cipher/) and select 'guess' as key.
 => `AS A RULE MEN WORRY MORE ABOUT WHAT THEY CANT SEE THAN ABOUT WHAT THEY CAN PASSWORD IS CARTHAGO`
@@ -699,7 +699,7 @@ Challenge 23:
 
 When reading the pixel values of the image and test if they are even or odd this is the result:
 
-![blue channel even](http://lvack.com/easter2016/23_coincidence.png)
+![blue channel even](https://raw.githubusercontent.com/skirsten/hacky-easter-2016/master/res/23_coincidence.png)
 
 Coincidence? I don't think so!
 
@@ -732,7 +732,7 @@ with open("merged.png", "wb") as f:
 ```
 This will provide you with this png image:
 
-![merged](http://lvack.com/easter2016/23_merged.png)
+![merged](https://raw.githubusercontent.com/skirsten/hacky-easter-2016/master/res/23_merged.png)
 
 The red bit is the data to extract and if r, g, b and a xor'd together are 1 the data is [authentic](https://en.wikipedia.org/wiki/Message_authentication_code) and should be included in the output.
 
