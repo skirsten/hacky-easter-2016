@@ -144,7 +144,7 @@ Challenge 10:
 
 After analyzing the javascript code this formula was extracted and can be used to draw a pixel at (x, y) with the value v.
 
-![Created with LaTeX](https://raw.githubusercontent.com/skirsten/hacky-easter-2016/master/res/10_formula.svg)
+![Created with LaTeX](https://raw.githubusercontent.com/skirsten/hacky-easter-2016/master/res/10_formula.png)
 
 If the result is 1 the pixel is white if 0 blue.
 This is nothing other than a mathematical way of getting the bit at a specific position.
