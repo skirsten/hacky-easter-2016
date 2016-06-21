@@ -3,7 +3,7 @@ Hacky Easter 2016 writeup
 
 This is a write-up of my solutions for the [Hacky Easter 2016](http://hackyeaster.hacking-lab.com/hackyeaster/) white-hat free hacking competition for education and fun.
 
-The official solution document, wich contains two of mine solutions, can be found [here](http://media.hacking-lab.com/hackyeaster/HackyEaster2016_Solutions.pdf).
+The official solution document, which contains two of mine solutions, can be found [here](http://media.hacking-lab.com/hackyeaster/HackyEaster2016_Solutions.pdf).
 
 Also keep in mind: These solutions may not be the fastest, most useful or most practical way of solving the given challenge and as always there is no guarantee that the code does not fry your computer and I am not to be held responsible for anything good or bad that happens to you and/or your computer because of my code snippets.
 
@@ -58,7 +58,7 @@ Challenge 5:
 ------------
 
 The video does not contain any clues so one of the 4 subtitle languages should contain our password.
-Looking through the subtitle files wich are just plain text you will find at the bottom of the Esperanto subtitles:
+Looking through the subtitle files which are just plain text you will find at the bottom of the Esperanto subtitles:
 ```
 1
 00:01:00.000 -=> 00:01:03.000
@@ -68,7 +68,7 @@ passphrase is "youtubelotitis"
 Challenge 6:
 ------------
 
-Klick on each elevator button and it will redirect you to `challenge06.html?floor={floornumber}` except button 13 wich will bring you to `challenge06.html?sybbe=punatrzr`.
+Klick on each elevator button and it will redirect you to `challenge06.html?floor={floornumber}` except button 13 which will bring you to `challenge06.html?sybbe=punatrzr`.
 `sybbe` is rot13 of `floor` and `punatrzr` is rot13 of `changeme`.
 
 We expect floor thirteen so rot13 of `thirteen` is `guvegrra`.
@@ -215,7 +215,7 @@ Challenge 12:
 -------------
 The zip bomb must be decompressed then all git merges must be restored to get the next zip witch is then gonna be decompressed and so on.
 
-I wrote this bash script to extract the zips until we meet one wich needs a password:
+I wrote this bash script to extract the zips until we meet one which needs a password:
 ```bash
 #!/bin/bash
 
@@ -266,7 +266,7 @@ run it in the same directory as the 1000.zip
 chmod +x extract
 ./extract
 ```
-This will extract until 0045.zip wich needs a password, that is in the name of one of the merges in the 0046 directory.
+This will extract until 0045.zip which needs a password, that is in the name of one of the merges in the 0046 directory.
 `Pass is fluffy99`
 
 Extract the protected zip `unzip -q -P fluffy99 0046/0045.zip` and `./extract 0045` to let it finish extracting.
@@ -366,13 +366,13 @@ Mount image using `mount` command on linux or a mount tool on Windows.
 `story.txt` contains unnecessary tabs and spaces between and after lines.
 This is called "Whitespace steganography" and using the tool [SNOW](http://www.darkside.com.au/snow/) the string `pig 1: Filbert` was extracted.
 
-Since `song.mp3` did not contain any clues on the cipher used I had to guess. I found the program [MP3stego](http://www.petitcolas.net/steganography/mp3stego/) wich could successfully decode the mp3 and yield `pig 3: Wynchell`.
+Since `song.mp3` did not contain any clues on the cipher used I had to guess. I found the program [MP3stego](http://www.petitcolas.net/steganography/mp3stego/) which could successfully decode the mp3 and yield `pig 3: Wynchell`.
 
 What I did not know was that when the decoder asks you for a passphrase you don't actually have to enter one. So, of course, I tried way too long to crack the password.
 
 Challenge 16:
 --------------
-Using [dex2jar](https://github.com/pxb1988/dex2jar) and [jdgui](http://jd.benow.ca/) the app was decompiled wich was not actually needed because the app is so kind and sends the hmac secret `eggsited` with every message.
+Using [dex2jar](https://github.com/pxb1988/dex2jar) and [jdgui](http://jd.benow.ca/) the app was decompiled which was not actually needed because the app is so kind and sends the hmac secret `eggsited` with every message.
 The hmac used is just the color in hex with the key.
 
 Using [this hmac generator](http://www.freeformatter.com/hmac-generator.html#ad-output) and selecting `ffff00` (yellow in hex) as message and `eggsited` as key the hmac `1da02c68080863fa302c20c3312371f4e365a5f9` was generated.
@@ -569,7 +569,7 @@ and after logging every operation this is the flow of the variables:
 14:	vc += c
 15:	vd += c
 ```
-Wich could be used to construct these terms:
+Which could be used to construct these terms:
 (numbers in sum are char index, numbers right of == are the real target numbers)
 ```
 sum(1, 3, 5, 7, 9, 11, 13, 15) == 67
@@ -677,7 +677,7 @@ This results in almost correct messages with similar looking keys (`parispanis` 
 
 => `phrase you need is alchemy...`
 
-Playfair cipher: [Using this project](https://github.com/N8Stewart/PlayfairCrack) wich needs to be compiled in linux the cipher was cracked (spaces were added manually): 
+Playfair cipher: [Using this project](https://github.com/N8Stewart/PlayfairCrack) which needs to be compiled in linux the cipher was cracked (spaces were added manually): 
 => `THE PLAYFAIR CIPHER WAS THE FIRST PRACTICAL ... PASSWORD IS BLETCHLEY`
 
 Challenge 22:
@@ -687,7 +687,7 @@ The supplied code snippet was looking just like the source code of the sha1 hash
 
 After modifying the code the hashes could be cracked using [this](https://github.com/danielmiessler/SecLists/blob/master/Passwords/merged.txt.tar.gz) password list.
 
-Just use the changed implementation and feed it with every password... Just like Challenge 20
+Just use the changed implementation and feed it with every password... Just like [Challenge 20](#challenge-20)
 
 	0: zombie
 	1: Denver1
@@ -786,7 +786,7 @@ for l in range(1, 10):
 		if i % 1000000 == 0:
 			print(i, suffix)
 ```
-Note that pytohn is very slow and I recommend implementing a cracker in C++ using [this sha246 source code](http://bradconte.com/sha256_c) wich in my case did speed up the cracking a lot. Also, look into using ocl hashcat!
+Note that pytohn is very slow and I recommend implementing a cracker in C++ using [this sha246 source code](http://bradconte.com/sha256_c) which in my case did speed up the cracking a lot. Also, look into using ocl hashcat!
 
 One possible url is `http://evileaster.com/jghirfj`
 
@@ -823,7 +823,7 @@ for key in itertools.imap("".join, itertools.product(mask, repeat=5)):
 	if i % 1000000 == 0:
 		print(i, key)
 ```
-This provides us with the key `tKguF` wich we can use to craft our own token:
+This provides us with the key `tKguF` which we can use to craft our own token:
 
 ```python
 import base64
