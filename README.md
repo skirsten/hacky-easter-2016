@@ -7,7 +7,6 @@ The official solution document, which contains two of mine solutions, can be fou
 
 Also keep in mind: These solutions may not be the fastest, most useful or most practical way of solving the given challenge and as always there is no guarantee that the code does not fry your computer and I am not to be held responsible for anything good or bad that happens to you and/or your computer because of my code snippets.
 
-*I screwed up the images so they will be unavailable for some time.*
 
 Table of contents
 ------------------
